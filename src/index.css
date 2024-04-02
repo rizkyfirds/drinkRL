@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* src/index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'Thunder';
+    src: url('../src/static/Web-TT/Thunder-ExtraBoldLC.ttf') format('truetype');
+    font-weight: 800; /* Sesuaikan berat font jika diperlukan */
+    font-style: normal; /* Sesuaikan gaya font jika diperlukan */
+  }
+
+/* @font-face {
+    font-family: 'Thunder-BoldHCItalic';
+    src: url('./fonts/Thunder-BoldHCItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: bold;
+} */
+
+/* @font-face {
+    font-family: 'Thunder-ExtraBoldHC';
+    src: url('./fonts/Thunder-ExtraBoldHC.ttf') format('truetype');
+    font-weight: 800; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'Thunder-BlackHCItalic';
+    src: url('./fonts/Thunder-BlackHCItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 900; 
 }
+
+@font-face {
+    font-family: 'Thunder-BlackHC';
+    src: url('./fonts/Thunder-BlackHC.ttf') format('truetype');
+    font-weight: 900; 
+} */
