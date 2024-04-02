@@ -1,31 +1,31 @@
-import React from 'react'
-import Logo from "../../assets/logo.svg"
-import { FaInstagram, FaYoutube , FaTwitter  } from "react-icons/fa";
+import React from "react";
+import Logo from "../../assets/logo.svg";
+import TextHover from "./TextHover";
 
 export default function Footer() {
   return (
-    <div className='h-full flex justify-between'>
-        <div className=''>
-            <img src={Logo} alt="" />
+    <div className="h-full flex justify-between mx-10">
+      <div className="">
+        <img src={Logo} alt="" />
+      </div>
+      <div className="flex gap-x-16 my-auto ">
+        <div className="text-[#FCF6EE] text-3xl">
+          <TextHover text={"About"} />
+          <TextHover text={"Company"} />
+          <TextHover text={"Product"} />
+          <TextHover text={"Seller"} />
         </div>
-        <div className='flex gap-x-16 my-auto mr-10'>
-            <div className='text-[#FCF6EE] text-3xl'>
-                <p>About</p>
-                <p>Company</p>
-                <p>Product</p>
-                <p>Seller</p>
-            </div>
-            <div className='text-[#FCF6EE] text-3xl'>
-            <p className='text-4xl font-bold'>Contact</p>
-                <p>Email</p>
-                <p>Phone: 0000000</p>
-                <div className='flex gap-x-5'>
-                    <FaInstagram/>
-                    <FaYoutube />
-                    <FaTwitter />
-                </div>
-            </div>
+        <div className="text-[#FCF6EE] text-3xl">
+          <p className="text-4xl font-bold">Contact :</p>
+          <TextHover text={"Email"} />
+          <TextHover text={"Phone: 0000000"} />
+          <div className="flex gap-x-5">
+            <TextHover text={"Instagram"} />
+            <TextHover text={"Youtube"} />
+            <TextHover text={"Twitter"} />
+          </div>
         </div>
+      </div>
     </div>
-  )
+  );
 }
