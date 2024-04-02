@@ -25,7 +25,7 @@ function App() {
       <div className="h-fit my-8">
         <Available />
       </div>
-      <div className="h-1/3">
+      <div className="h-1/3 mt-14">
         <Footer />
       </div>
     </div>
