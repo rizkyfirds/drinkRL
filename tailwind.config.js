@@ -13,8 +13,11 @@ module.exports = {
         '2xl': '1.563rem',
         '3xl': '1.953rem',
         '4xl': '2.441rem',
+        '6xl': '3.75rem',
+        '7xl': '6rem',
         '8xl': '7rem',
         '9xl': '8rem',
+        '12xl': '14rem',
         'xxl': '19rem',
       },
       lineHeight: {

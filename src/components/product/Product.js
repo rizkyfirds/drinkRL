@@ -7,30 +7,25 @@ import Desc from "./Desc";
 
 export default function Product() {
   return (
-    <div className="h-full w-full">
-      <div className="h-screen">
-        <div className="h-1/2 text-[#FCF6EE]">
-          <p className="font-black text-xxl">PRODUCT</p>
+    <div className="h-full">
+      <div className="h-fit">
+        <div className="h-fit text-[#FCF6EE]">
+          <p className="font-black text-7xl md:text-12xl lg:text-xxl">
+            PRODUCT
+          </p>
         </div>
-        <div className="h-1/2 w-full overflow-x-auto snap-x flex">
-          <PerProduct drink={red} bgColor="#9F1835" text={"POWER FULL RED"} />
-          <PerProduct
-            drink={green}
-            bgColor={"#B2D24A"}
-            text={"POWER FULL RED"}
-          />
-          <PerProduct
-            drink={purple}
-            bgColor={"#9935D7"}
-            text={"POWER FULL RED"}
-          />
+        <div className="h-60 md:h-[28rem] lg:h-[32rem] flex mb-10 overflow-x-auto snap-x">
+          <div className="flex h-full">
+            <PerProduct drink={red} text={"POWER FULL RED"} />
+            <PerProduct drink={green} text={"POWER FULL GREEN"} />
+            <PerProduct drink={purple} text={"POWER FULL PURPLE"} />
+          </div>
         </div>
       </div>
-      <div className="h-full">
+      <div className="h-fit mt-10">
         <Desc
           title={"POWER FULL RED"}
           drink={red}
-          bgColor={"#9F1835"}
           sugar={"0.5%"}
           flavor={"STRAWBERRY"}
           flavorPercent={"0.5%"}
@@ -39,7 +34,6 @@ export default function Product() {
         <Desc
           title={"FRESH GREEN"}
           drink={green}
-          bgColor={"#B2D24A"}
           sugar={"0.5%"}
           flavor={"APPLE"}
           flavorPercent={"0.5%"}
@@ -48,7 +42,6 @@ export default function Product() {
         <Desc
           title={"RELEXING PURPLE"}
           drink={purple}
-          bgColor={"#9935D7"}
           sugar={"0.5%"}
           flavor={"GRAPE"}
           flavorPercent={"85%"}

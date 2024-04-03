@@ -5,7 +5,7 @@ import purple from "../../assets/purple.png";
 
 export default function Section2() {
   return (
-    <div className="flex h-full">
+    <div className="flex h-full overflow-x-auto">
       <div className="flex h-full mx-auto gap-x-10">
         <img src={red} alt="" />
         <img src={green} alt="" />

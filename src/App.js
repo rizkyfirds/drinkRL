@@ -13,10 +13,10 @@ function App() {
       <div className="h-14">
         <Navbar />
       </div>
-      <div className="h-3/4">
+      <div className="h-1/2 md:h-3/4">
         <Section1 />
       </div>
-      <div className="my-8 h-4/5">
+      <div className="my-8 h-1/4 md:h-4/5">
         <Section2 />
       </div>
       <div className="h-fit my-8">
@@ -25,7 +25,7 @@ function App() {
       <div className="h-fit my-8">
         <Available />
       </div>
-      <div className="h-1/3 mt-14">
+      <div className="h-1/4 md:h-1/3 mt-14">
         <Footer />
       </div>
     </div>
